@@ -1,0 +1,155 @@
+﻿/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5fff0;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #a8e6a2;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+    nav ul li {
+        margin: 5px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #006400;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                color: #a8e6a2;
+            }
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c5f2d;
+}
+
+/* Анимация кнопок */
+.btn-animated {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .btn-animated:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+/* Раздел "Польза йоги" */
+.benefits-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Раздел "Блог" */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+/* Футер */
+footer {
+    background-color: #a8e6a2;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            footer ul li a {
+                text-decoration: none;
+                color: #006400;
+                font-size: 1.5rem;
+            }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .benefits-icon {
+        font-size: 2rem;
+    }
+
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+/* Статьи */
+.article-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-section {
+    margin-bottom: 3rem;
+}
+
+.article-title {
+    font-size: 2rem;
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+}
+
+.article-subtitle {
+    font-size: 1.5rem;
+    color: #3c763d;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-text {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 1.8rem;
+    }
+
+    .article-subtitle {
+        font-size: 1.3rem;
+    }
+}

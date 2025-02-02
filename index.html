@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Йога и ЗОЖ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Инициализация AOS
+            if (typeof AOS !== "undefined") {
+                AOS.init();
+            }
+            // Установка текущего года
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</head>
+
+<body>
+    <header class="bg-success text-white text-center py-4">
+        <h1>Йога, как хобби</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#about">Обо мне</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#benefits">Польза йоги</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#schedule">Расписание</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#get-started">Как начать?</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#blog">Блог</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- О себе -->
+        <section id="about" class="text-center" data-aos="fade-up">
+            <h2>Обо мне</h2>
+            <p class="lead">Привет! Я занимаюсь йогой более 5 лет. Для меня это не просто тренировки, а образ жизни, который помогает сохранять баланс и гармонию.</p>
+        </section>
+
+        <!-- Польза йоги -->
+        <section id="benefits" class="my-5">
+            <h2 class="text-center">Польза йоги</h2>
+            <div class="container">
+                <p class="lead text-center">Йога — это древняя практика, которая помогает улучшить физическое и психическое здоровье.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center" data-aos="fade-up">
+                        <i class="fas fa-heart fa-3x mb-3"></i>
+                        <h3>Укрепление сердца</h3>
+                        <p>Йога способствует нормализации давления и улучшению работы сердечно-сосудистой системы.</p>
+                    </div>
+                    <div class="col-md-4 text-center" data-aos="fade-up">
+                        <i class="fas fa-brain fa-3x mb-3"></i>
+                        <h3>Снижение стресса</h3>
+                        <p>Практика дыхания и медитации помогает снять напряжение и повысить концентрацию.</p>
+                    </div>
+                    <div class="col-md-4 text-center" data-aos="fade-up">
+                        <i class="fas fa-dumbbell fa-3x mb-3"></i>
+                        <h3>Укрепление мышц</h3>
+                        <p>Асаны развивают силу и выносливость, улучшая общее состояние тела.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Расписание -->
+        <section id="schedule" class="my-5">
+            <h2 class="text-center">Моё расписание занятий</h2>
+            <table class="table table-bordered mx-auto" style="max-width: 800px;">
+                <thead>
+                    <tr>
+                        <th>День недели</th>
+                        <th>Время</th>
+                        <th>Тип занятия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Понедельник</td>
+                        <td>9:00 - 10:30</td>
+                        <td>Хатха-йога</td>
+                    </tr>
+                    <tr>
+                        <td>Среда</td>
+                        <td>21:00 - 22:30</td>
+                        <td>Инь-йога</td>
+                    </tr>
+                    <tr>
+                        <td>Суббота</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Сукшма вьяяма и медитация</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="text-center"><a href="#contact" class="btn btn-success">Задайте мне вопрос</a></p>
+        </section>
+
+        <!-- Как начать? -->
+        <section id="get-started" class="my-5">
+            <h2 class="text-center">Как начать заниматься йогой?</h2>
+            <div class="container">
+                <ol class="list-unstyled text-center">
+                    <li><strong>Выберите место:</strong> Найдите тихое пространство для практики.</li>
+                    <li><strong>Подберите одежду:</strong> Удобная одежда поможет вам двигаться свободно.</li>
+                    <li><strong>Начните с базовых асан:</strong> Попробуйте позы, такие как «Детская поза» или «Поза кошки».</li>
+                </ol>
+                <p class="text-center"><a href="https://vkvideo.ru/video-71118122_456239028?ref_domain=yastatic.net" class="btn btn-success" target="_blank">Смотреть видеоурок</a></p>
+            </div>
+        </section>
+
+        <!-- Блог -->
+        <section id="blog" class="my-5">
+            <h2 class="text-center">Полезные статьи</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <div class="card shadow">
+                            <img src="article1.jpg" alt="Статья 1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Как правильно дышать во время йоги</h5>
+                                <p class="card-text">Узнайте о различных техниках дыхания в йоге и их влиянии на организм.</p>
+                                <a href="article1.html" class="btn btn-success">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                        <div class="card shadow">
+                            <img src="article2.jpg" alt="Статья 2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Лучшие асаны для начинающих</h5>
+                                <p class="card-text">Список простых поз, которые помогут вам освоить основы йоги.</p>
+                                <a href="article2.html" class="btn btn-success">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="my-5">
+            <h2 class="text-center">Жду Ваши вопросы</h2>
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-success">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; <span id="currentYear"></span> Йога и ЗОЖ. Все права защищены.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://vk.com/alya_31"><i class="fab fa-vk"></i></a></li>
+            <li class="list-inline-item"><a href="https://t.me/alya_75"><i class="fab fa-telegram"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
